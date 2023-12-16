@@ -1,0 +1,65 @@
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+main {
+  position: absolute;
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+main > * {
+  grid-column: 2 / span 10;
+}
+
+main > header {
+  grid-column: 1 / span 12;
+  background: #333;
+  padding: 1em;
+}
+
+main > header > h1 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+main > header > p {
+  margin: 0;
+  font-size: 0.8em;
+}
+
+main > section {
+  background: #333;
+  padding: 1em;
+}
+
+main > section > h2 {
+  margin: 0;
+}
+
+main > section > p {
+  margin: 0;
+}
+
+main > footer {
+  grid-column: 1 / span 12;
+  background: #333;
+  padding: 1em;
+}
+
+main > footer > p {
+  margin: 0;
+  font-size: 0.8em;
+}
+
+main > footer > a {
+  color: white;
+}
+
+main > footer > a:hover {
+  color: #ccc;
+}
+    
